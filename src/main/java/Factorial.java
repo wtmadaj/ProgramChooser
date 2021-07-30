@@ -11,16 +11,18 @@ public class Factorial {
         userEntry = in.nextInt();
         int originalUserEntry = userEntry;
 
+        // Calculate the factorial ...
         while (userEntry > 1) {
             factorial *= userEntry--;
         }
 
-//        Catch sneaky zeros or negative numbers
-        if (userEntry < 1) {
+        // ... but catch sneaky negative numbers
+        if (userEntry < 0) {
             System.out.println("I said to enter a number between 1 and 20!\n");
             factorialEngine();
         }
-//        Print out how factorial is calculated
+
+        // Print out how the factorial is calculated
         for (int i = originalUserEntry; i > 0 ; i--) {
             System.out.print(i);
             if (i > 1) {
