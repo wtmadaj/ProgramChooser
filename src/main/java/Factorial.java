@@ -14,10 +14,16 @@ public class Factorial {
         while (userEntry > 1) {
             factorial *= userEntry--;
         }
+//        Print out how factorial is calculated
+        for (int i = originalUserEntry; i > 0 ; i--) {
+            System.out.print(i);
+            if (i > 1) {
+                System.out.print(" * ");
+            }
+            if (i == 1) {
+                System.out.print(" = " + factorial);
+            }
+        }
         System.out.println("\nFactorial " + originalUserEntry + " is: " + factorial);
     }
 }
-/*
-TODO:
-    1) print the factorial process so the user can see it
-*/
