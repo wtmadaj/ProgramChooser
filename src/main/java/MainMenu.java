@@ -6,6 +6,7 @@ public class MainMenu {
         Scanner scanner = new Scanner(System.in);
         System.out.println("\nEnter 1 to see today's date\n" +
                 "Enter 2 to calculate the factorial of a number\n" +
+                "Enter 3 to do something else\n" +
                 "Enter 0 to exit the program");
 
         String choice = scanner.nextLine();
