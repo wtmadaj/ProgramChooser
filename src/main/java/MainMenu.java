@@ -13,6 +13,9 @@ public class MainMenu {
         if (choice.equals("1")) {
             TodaysDate.seeTodaysDate();
             MainMenu.displayMainMenu();
+        } else if (choice.equals("2")) {
+            Factorial.factorialEngine();
+            MainMenu.displayMainMenu();
         }
         else if (choice.equals("0")) {
             return;
