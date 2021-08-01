@@ -6,6 +6,6 @@ public class TodaysDate {
         Date date = new Date();
         SimpleDateFormat dateFormat = new SimpleDateFormat("E yyyy.MM.dd 'at' hh:mm:ss a zzz");
 
-        System.out.print("Today's date is: " + dateFormat.format(date));
+        System.out.print("\nToday's date is: " + dateFormat.format(date) + "\n");
     }
 }
