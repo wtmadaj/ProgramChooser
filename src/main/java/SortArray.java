@@ -29,5 +29,5 @@ public class SortArray {
 
 /*
 TODO:
-    1) Separate out collecting input, sorting the array, and maybe printing the array as separeate methods
+    1) Separate out collecting input, sorting the array, and maybe printing the array as separate methods
 */

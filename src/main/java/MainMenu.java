@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class MainMenu {
 
-    public static void displayMainMenu() {
+    public static void displayMainMenu() throws InterruptedException {
         Scanner scanner = new Scanner(System.in);
         System.out.println("\n\nEnter 1 to see today's date\n" +
                 "Enter 2 to calculate the factorial of a number\n" +
@@ -22,7 +22,11 @@ public class MainMenu {
             MainMenu.displayMainMenu();
         }
         else if (choice.equals("0")) {
-            System.out.println("\nShutting down ...... ");
+            System.out.print("\nShutting down ");
+            for (int i =0; i < 10; i++) {
+                Thread.sleep(300);
+                System.out.print(".");
+            }
             return;
         }
         else {
