@@ -3,6 +3,18 @@ import java.util.Scanner;
 
 public class SortArray {
     static void sortArray() {
+
+        int inputArray[] = collectInput();
+
+        Arrays.sort(inputArray);
+
+        System.out.println("\nYour array is now sorted: ");
+        for (int number : inputArray) {
+            System.out.print(number + "  ");
+        }
+    }
+
+    static int[] collectInput() {
         Scanner scanner = new Scanner(System.in);
         int integerCount;
 
@@ -16,15 +28,8 @@ public class SortArray {
             System.out.print(inputArray[i] + " ");
         }
 
-        Arrays.sort(inputArray);
-        System.out.println("\nYour array is now sorted: ");
-        for (int number : inputArray) {
-            System.out.print(number + "  ");
-        }
+        return inputArray;
     }
-//    static void collectInput() {
-//        return inputArray;
-//    }
 }
 
 /*
