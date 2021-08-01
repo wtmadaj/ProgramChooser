@@ -31,8 +31,3 @@ public class SortArray {
         return inputArray;
     }
 }
-
-/*
-TODO:
-    1) Separate out collecting input, sorting the array, and maybe printing the array as separate methods
-*/
