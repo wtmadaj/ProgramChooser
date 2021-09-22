@@ -6,7 +6,7 @@ public class IntegerReversal {
         System.out.println("Enter a number and I'll reverse it: ");
         Scanner in = new Scanner(System.in);
         int x = in.nextInt();
-        int sign = 0;
+        int sign;
         if (x<0) {
             sign = -1;
         } else { sign = 1; }
