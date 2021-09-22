@@ -37,3 +37,5 @@ public class MainMenu {
         scanner.close();
     }
 }
+//TODO:
+//  -Self describing numbers
