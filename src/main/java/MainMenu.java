@@ -7,6 +7,7 @@ public class MainMenu {
         System.out.println("\n\nEnter 1 to see today's date\n" +
                 "Enter 2 to calculate the factorial of a number\n" +
                 "Enter 3 to sort an array\n" +
+                "Enter 4 to reverse an Integer\n" +
                 "Enter 0 to exit the program");
 
         String choice = scanner.nextLine();
@@ -19,6 +20,9 @@ public class MainMenu {
             MainMenu.displayMainMenu();
         } else if (choice.equals("3")) {
             SortArray.sortArray();
+            MainMenu.displayMainMenu();
+        } else if (choice.equals("4")) {
+            IntegerReversal.reverse();
             MainMenu.displayMainMenu();
         }
         else if (choice.equals("0")) {
